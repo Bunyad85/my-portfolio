@@ -75,20 +75,20 @@ const Contact = () => {
     }
 
     return (
-        <section id='contact' className='flex min-h-[70vh] w-full items-center justify-center px-4 py-20'>
-            <div className='flex w-full max-w-3xl flex-col gap-8 rounded-3xl border border-white/10 bg-black/40 p-8 text-white shadow-2xl shadow-indigo-950 backdrop-blur-sm md:p-12'>
-                <div className='space-y-4 text-center'>
-                    <h1 className='text-5xl md:text-7xl'>
+        <section id='contact' className='flex min-h-[70vh] w-full items-center justify-center px-0 py-16 sm:px-2 sm:py-20'>
+            <div className='flex w-full max-w-3xl flex-col gap-5 overflow-hidden rounded-[24px] border border-white/10 bg-black/40 p-4 text-white shadow-2xl shadow-indigo-950 backdrop-blur-sm sm:gap-8 sm:rounded-[28px] sm:p-6 md:rounded-3xl md:p-12'>
+                <div className='space-y-3 text-center sm:space-y-4'>
+                    <h1 className='text-4xl md:text-7xl'>
                         <span className='bg-gradient-to-r from-indigo-500 to-blue-500 bg-clip-text text-transparent'>Get in Touch</span>
                     </h1>
-                    <p className='text-base font-medium text-gray-400 md:text-lg'>
-                        Send a direct message from the website. It will be forwarded to `bunyad-seferov@mail.ru`.
+                    <p className='mx-auto max-w-xl break-words text-sm font-medium leading-6 text-gray-400 sm:text-base md:text-lg'>
+                        Send a message…
                     </p>
                 </div>
 
-                <form onSubmit={handleSubmit} className='grid gap-4'>
-                    <div className='grid gap-4 md:grid-cols-2'>
-                        <label className='grid gap-2 text-sm text-gray-300'>
+                <form onSubmit={handleSubmit} className='grid gap-3 sm:gap-4'>
+                    <div className='grid gap-3 md:grid-cols-2 sm:gap-4'>
+                        <label className='grid gap-1.5 text-xs text-gray-300 sm:gap-2 sm:text-sm'>
                             Name
                             <input
                                 type='text'
@@ -98,10 +98,10 @@ const Contact = () => {
                                 placeholder='Your name'
                                 required
                                 autoComplete='name'
-                                className='rounded-2xl border border-white/10 bg-white/5 px-5 py-4 text-base text-white outline-none transition focus:border-indigo-500 focus:bg-white/10'
+                                className='min-w-0 rounded-lg border border-white/10 bg-white/5 px-3 py-2.5 text-sm text-white outline-none transition focus:border-indigo-500 focus:bg-white/10 sm:rounded-2xl sm:px-5 sm:py-4 sm:text-base'
                             />
                         </label>
-                        <label className='grid gap-2 text-sm text-gray-300'>
+                        <label className='grid gap-1.5 text-xs text-gray-300 sm:gap-2 sm:text-sm'>
                             Email
                             <input
                                 type='email'
@@ -111,13 +111,13 @@ const Contact = () => {
                                 placeholder='Your email'
                                 required
                                 autoComplete='email'
-                                className='rounded-2xl border border-white/10 bg-white/5 px-5 py-4 text-base text-white outline-none transition focus:border-indigo-500 focus:bg-white/10'
+                                className='min-w-0 rounded-lg border border-white/10 bg-white/5 px-3 py-2.5 text-sm text-white outline-none transition focus:border-indigo-500 focus:bg-white/10 sm:rounded-2xl sm:px-5 sm:py-4 sm:text-base'
                             />
                         </label>
                     </div>
 
                     <div className='hidden' aria-hidden='true'>
-                        <label className='grid gap-2 text-sm text-gray-300'>
+                        <label className='grid gap-1.5 text-xs text-gray-300 sm:gap-2 sm:text-sm'>
                             Company
                             <input
                                 type='text'
@@ -126,12 +126,12 @@ const Contact = () => {
                                 onChange={handleChange}
                                 tabIndex='-1'
                                 autoComplete='off'
-                                className='rounded-2xl border border-white/10 bg-white/5 px-5 py-4 text-base text-white outline-none transition'
+                                className='rounded-lg border border-white/10 bg-white/5 px-3 py-2.5 text-sm text-white outline-none transition sm:rounded-2xl sm:px-5 sm:py-4 sm:text-base'
                             />
                         </label>
                     </div>
 
-                    <label className='grid gap-2 text-sm text-gray-300'>
+                    <label className='grid gap-1.5 text-xs text-gray-300 sm:gap-2 sm:text-sm'>
                         Message
                         <textarea
                             name='message'
@@ -140,21 +140,21 @@ const Contact = () => {
                             placeholder='Tell me about your project or idea'
                             required
                             rows='6'
-                            className='resize-none rounded-2xl border border-white/10 bg-white/5 px-5 py-4 text-base text-white outline-none transition focus:border-indigo-500 focus:bg-white/10'
+                            className='min-h-28 resize-none rounded-lg border border-white/10 bg-white/5 px-3 py-2.5 text-sm text-white outline-none transition focus:border-indigo-500 focus:bg-white/10 sm:min-h-36 sm:rounded-2xl sm:px-5 sm:py-4 sm:text-base'
                         />
                     </label>
 
                     <button
                         type='submit'
                         disabled={isSubmitting}
-                        className='rounded-2xl border border-indigo-600 bg-black px-5 py-4 text-lg font-bold text-white shadow-lg shadow-indigo-700 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-indigo-600 disabled:cursor-not-allowed disabled:opacity-60 disabled:hover:translate-y-0'
+                        className='w-full rounded-lg border border-indigo-600 bg-black px-4 py-2.5 text-sm font-bold text-white shadow-lg shadow-indigo-700 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-indigo-600 disabled:cursor-not-allowed disabled:opacity-60 disabled:hover:translate-y-0 sm:rounded-2xl sm:px-5 sm:py-4 sm:text-lg'
                     >
                         {isSubmitting ? 'Sending...' : 'Send Message'}
                     </button>
                 </form>
 
                 {status.message && (
-                    <p className={`rounded-2xl border px-4 py-3 text-sm md:text-base ${status.type === 'success'
+                    <p className={`break-words rounded-xl border px-4 py-3 text-sm leading-6 sm:rounded-2xl md:text-base ${status.type === 'success'
                         ? 'border-green-500/30 bg-green-500/10 text-green-300'
                         : 'border-red-500/30 bg-red-500/10 text-red-300'
                         }`}>

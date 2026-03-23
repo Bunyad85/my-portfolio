@@ -21,8 +21,9 @@ const Tech = () => {
 
                 className='text-4xl font-light text-white md:text-6xl'>Technologies</motion.h1>
 
-            <div className='flex flex-wrap items-center justify-center gap-10 p-5'>
+            <div className='grid w-full grid-cols-2 place-items-center gap-8 p-5 md:flex md:flex-wrap md:items-center md:justify-center md:gap-10'>
                 <motion.div
+                    className='flex justify-center last:col-span-2 md:last:col-span-1'
                     variants={variants}
                     initial="hidden"
                     whileInView='visible'
@@ -31,6 +32,7 @@ const Tech = () => {
                         <BiLogoJavascript className='cursor-pointer text-[80px] text-yellow-500 transition-all duration-300 hover:translate-y-5 sm:text-[100px] md:text-[120px]' /></a>
                 </motion.div>
                 <motion.div
+                    className='flex justify-center last:col-span-2 md:last:col-span-1'
                     variants={variants}
                     initial="hidden"
                     whileInView='visible'
@@ -39,6 +41,7 @@ const Tech = () => {
                         <BiLogoTypescript className='cursor-pointer text-[80px] text-blue-500 transition-all duration-300 hover:translate-y-5 sm:text-[100px] md:text-[120px]' /></a>
                 </motion.div>
                 <motion.div
+                    className='flex justify-center last:col-span-2 md:last:col-span-1'
                     variants={variants}
                     initial="hidden"
                     whileInView='visible'
@@ -47,6 +50,7 @@ const Tech = () => {
                         <BiLogoReact className='cursor-pointer text-[80px] text-cyan-500 transition-all duration-300 hover:translate-y-5 sm:text-[100px] md:text-[120px]' /></a>
                 </motion.div>
                 <motion.div
+                    className='flex justify-center last:col-span-2 md:last:col-span-1'
                     variants={variants}
                     initial="hidden"
                     whileInView='visible'
@@ -55,6 +59,7 @@ const Tech = () => {
                         <BiLogoTailwindCss className='cursor-pointer text-[80px] text-teal-400 transition-all duration-300 hover:translate-y-5 sm:text-[100px] md:text-[120px]' /></a>
                 </motion.div>
                 <motion.div
+                    className='flex justify-center last:col-span-2 md:last:col-span-1'
                     variants={variants}
                     initial="hidden"
                     whileInView='visible'
@@ -63,6 +68,7 @@ const Tech = () => {
                         <BiLogoNodejs className='cursor-pointer text-[80px] text-green-400 transition-all duration-300 hover:translate-y-5 sm:text-[100px] md:text-[120px]' /></a>
                 </motion.div>
                 <motion.div
+                    className='flex justify-center last:col-span-2 md:last:col-span-1'
                     variants={variants}
                     initial="hidden"
                     whileInView='visible'
@@ -71,6 +77,7 @@ const Tech = () => {
                         <BiLogoGit className='cursor-pointer text-[80px] text-red-500 transition-all duration-300 hover:translate-y-5 sm:text-[100px] md:text-[120px]' /></a>
                 </motion.div>
                 <motion.div
+                    className='flex justify-center last:col-span-2 md:last:col-span-1'
                     variants={variants}
                     initial="hidden"
                     whileInView='visible'
@@ -79,6 +86,7 @@ const Tech = () => {
                         <BiLogoGithub className='cursor-pointer text-[80px] text-gray-400 transition-all duration-300 hover:translate-y-5 sm:text-[100px] md:text-[120px]' /></a>
                 </motion.div>
                 <motion.div
+                    className='flex justify-center last:col-span-2 md:last:col-span-1'
                     variants={variants}
                     initial="hidden"
                     whileInView='visible'
@@ -87,6 +95,7 @@ const Tech = () => {
                         <BiLogoHtml5 className='cursor-pointer text-[80px] text-orange-400 transition-all duration-300 hover:translate-y-5 sm:text-[100px] md:text-[120px]' /></a>
                 </motion.div>
                 <motion.div
+                    className='flex justify-center last:col-span-2 md:last:col-span-1'
                     variants={variants}
                     initial="hidden"
                     whileInView='visible'
@@ -95,6 +104,7 @@ const Tech = () => {
                         <BiLogoMongodb className='cursor-pointer text-[80px] text-green-500 transition-all duration-300 hover:translate-y-5 sm:text-[100px] md:text-[100px]' /></a>
                 </motion.div>
                 <motion.div
+                    className='flex justify-center last:col-span-2 md:last:col-span-1'
                     variants={variants}
                     initial="hidden"
                     whileInView='visible'
@@ -103,6 +113,7 @@ const Tech = () => {
                         <BiLogoCss3 className='cursor-pointer text-[80px] text-blue-400 transition-all duration-300 hover:translate-y-5 sm:text-[100px] md:text-[120px]' /></a>
                 </motion.div>
                 <motion.div
+                    className='flex justify-center last:col-span-2 md:last:col-span-1'
                     variants={variants}
                     initial="hidden"
                     whileInView='visible'

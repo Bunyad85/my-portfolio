@@ -26,7 +26,7 @@ const projects = [
 
 const Projects = () => {
     return (
-        <div id='projects' className='flex min-h-[70vh] w-full flex-col items-center justify-center gap-16 px-10 py-24'>
+        <div id='projects' className='flex min-h-[70vh] w-full flex-col items-center justify-center gap-12 px-4 py-20 sm:gap-16 sm:px-6 sm:py-24 md:px-10'>
             <motion.h1
                 initial={{ y: -50, opacity: 0 }}
                 whileInView={{ y: 0, opacity: 1 }}
