@@ -4,6 +4,12 @@ import { FaTachometerAlt, FaCar } from "react-icons/fa";
 
 const projects = [
     {
+        title: "Car-Site-Task",
+        description: "A responsive car website built with React, allowing users to browse and explore different vehicles.",
+        image: <FaCar className="text-6xl text-yellow-500" />,
+        link: "https://car-site-task.netlify.app/"
+    },
+    {
         title: "Dashboard",
         description: "Interactive admin dashboard built with React, Tailwind CSS, and Chart.js for data visualization.",
         image: <FaTachometerAlt className="text-6xl text-blue-500" />,
@@ -14,13 +20,8 @@ const projects = [
         description: "A responsive car listing website where users can browse, search, and filter car ads.",
         image: <FaCar className="text-6xl text-green-500" />,
         link: "https://carzonefreetest.netlify.app/"
-    },
-    {
-        title: "Blog Platform",
-        description: "A simple blog platform with authentication and CRUD operations using Node.js and MongoDB.",
-        image: "/project3.png",
-        link: "https://github.com/Bunyad85/blog-platform"
     }
+
 ];
 
 const Projects = () => {

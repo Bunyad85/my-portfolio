@@ -37,13 +37,7 @@ const Hero = () => {
                     </button>
 
                     {isOpen && (
-                        <p className="md:text-base text-pretty text-sm text-gray-400 leading-relaxed">Salam, mən Bunyad – texnologiyaya həvəsi olan və daim öyrənməyə çalışan bir full-stack veb proqramçıyam. Veb tətbiqlər yaratmaq mənim üçün sadəcə iş deyil, həm də bir yaradıcılıq formasıdır. İstifadəçi təcrübəsini ön planda tutan, funksional və təmiz kodlu layihələr hazırlamaqdan zövq alıram.
-
-                            İşlərimdə əsasən React,TypeScript,Node.js və Express istifadə edirəm. Məlumatların idarəsi və saxlanmasında isə MongoDB ilə rahat və effektiv həllər tətbiq edirəm. Bu texnologiyalar vasitəsilə həm müasir dizayna sahib, həm də performanslı sistemlər hazırlamaq mümkündür.
-
-                            Frontend və backend sahələrində işləmək mənə geniş baxış bucağı qazandırıb və hər iki tərəfin necə harmoniya içində işlədiyini dərindən anlamağa imkan verib. Layihələrdə məsuliyyəti üzərimə götürməkdən və çətinliklər qarşısında daha güclü olmağı öyrənmişəm.
-
-                            Hədəfim – biliklərimi real layihələrdə tətbiq etmək, daha böyük komandaların bir parçası olmaq və gələcəkdə öz texnoloji məhsullarımı yaratmaqdır.</p>
+                        <p className="md:text-base text-pretty text-sm text-gray-400 leading-relaxed">Frontend proqramci olaraq React ve TypeScript ile muasir ve istifadeci dostu interfeysler hazirlayiram. Responsive dizayn, performans ve temiz kod prinsiplerine onem verirem. Meqsedim biliklerimi real layihelerde tetbiq ederek daha da inkisaf etdirmekdir.</p>
                     )}
 
 

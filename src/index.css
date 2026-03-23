@@ -5,12 +5,19 @@
   scroll-behavior: smooth;
 }
 
+#home,
+#tech,
+#projects,
+#contact {
+  scroll-margin-top: 120px;
+}
+
 ::-webkit-scrollbar {
   width: 20px;
 }
 
 ::-webkit-scrollbar-track {
-  background: rgba(0, 0, 0, 0.9, );
+  background: rgba(0, 0, 0, 0.9);
 }
 
 ::-webkit-scrollbar-thumb {

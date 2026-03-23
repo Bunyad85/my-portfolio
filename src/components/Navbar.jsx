@@ -11,6 +11,10 @@ const Navbar = () => {
         setIsOpen(!isOpen);
     }
 
+    const closeMenu = () => {
+        setIsOpen(false);
+    }
+
     return (
         <nav className='fixed top-0 z-10 flex w-full items-center justify-between border-b border-b-gray-700 bg-black/70 px-16
         py-6 text-white backdrop-blur-md md:justify-evenly'>
@@ -74,19 +78,19 @@ const Navbar = () => {
 
                     <ul className='flex flex-col gap-8'>
                         <li>
-                            <a href='#home' className='cursor-pointer opacity-70 transition-all duration-300 hover:opacity-100'>Home
+                            <a href='#home' onClick={closeMenu} className='cursor-pointer opacity-70 transition-all duration-300 hover:opacity-100'>Home
                             </a>
                         </li>
                         <li>
-                            <a href='#tech' className='cursor-pointer opacity-70 transition-all duration-300 hover:opacity-100'>Tech
+                            <a href='#tech' onClick={closeMenu} className='cursor-pointer opacity-70 transition-all duration-300 hover:opacity-100'>Tech
                             </a>
                         </li>
                         <li>
-                            <a href='#projects' className='cursor-pointer opacity-70 transition-all duration-300 hover:opacity-100'>Projects
+                            <a href='#projects' onClick={closeMenu} className='cursor-pointer opacity-70 transition-all duration-300 hover:opacity-100'>Projects
                             </a>
                         </li>
                         <li>
-                            <a href='#contact' className='cursor-pointer opacity-70 transition-all duration-300 hover:opacity-100'>Contact
+                            <a href='#contact' onClick={closeMenu} className='cursor-pointer opacity-70 transition-all duration-300 hover:opacity-100'>Contact
                             </a>
                         </li>
                     </ul>
