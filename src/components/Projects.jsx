@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from "motion/react";
-import { FaTachometerAlt, FaCar } from "react-icons/fa";
+import { FaTachometerAlt, FaCar, FaTshirt } from "react-icons/fa";
 
 const projects = [
     {
@@ -10,17 +10,17 @@ const projects = [
         link: "https://car-site-task.netlify.app/"
     },
     {
+        title: "MiniShopTask",
+        description: "MiniShop is a modern e-commerce frontend application built using React, TypeScript, and Tailwind CSS. It features product listing, filtering, and shopping cart functionality, providing a fast and responsive user experience.",
+        image: <FaTshirt className="text-6xl text-green-500" />,
+        link: "https://minishoptask.netlify.app/"
+    },
+    {
         title: "Dashboard",
         description: "Interactive admin dashboard built with React, Tailwind CSS, and Chart.js for data visualization.",
         image: <FaTachometerAlt className="text-6xl text-blue-500" />,
         link: "https://dashboardbundev.netlify.app/"
     },
-    {
-        title: "Car Listing Website",
-        description: "A responsive car listing website where users can browse, search, and filter car ads.",
-        image: <FaCar className="text-6xl text-green-500" />,
-        link: "https://carzonefreetest.netlify.app/"
-    }
 
 ];
 
