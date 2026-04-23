@@ -1,6 +1,5 @@
 import React from 'react';
-import { motion } from "motion/react";
-import { FaTachometerAlt, FaCar, FaTshirt } from "react-icons/fa";
+import { motion } from "framer-motion"; import { FaTachometerAlt, FaCar, FaTshirt } from "react-icons/fa";
 
 const projects = [
     {
@@ -46,7 +45,7 @@ const Projects = () => {
                         initial={{ opacity: 0, y: 50 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.5, delay: index * 0.2 }}
-                        className='flex flex-col items-center justify-start gap-4 rounded-xl bg-black/70 p-5 shadow-lg shadow-indigo-900 transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-indigo-600'
+                        className="flex flex-col items-center justify-start gap-4 rounded-xl bg-black/70 p-5 shadow-lg shadow-cyan-500/30 transition-all duration-300 hover:scale-105 hover:shadow-blue-700/50"
                     >
                         <div className='w-full h-40 flex items-center justify-center'>
                             {typeof project.image === "string" ? (

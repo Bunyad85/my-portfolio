@@ -13,7 +13,7 @@
 }
 
 ::-webkit-scrollbar {
-  width: 20px;
+  width: 8px;
 }
 
 ::-webkit-scrollbar-track {
@@ -21,5 +21,5 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(to bottom, rgb(0, 62, 196), rgb(184, 0, 153));
+  background: linear-gradient(to bottom, rgb(7, 96, 112), rgb(29, 78, 216));
 }
